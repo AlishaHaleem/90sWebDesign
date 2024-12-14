@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay Retro Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #000;
+        }
+        a {
+            text-decoration: underline;
+            color: blue;
+        }
+        a:hover {
+            color: red;
+        }
+        .header {
+            text-align: right;
+            padding: 5px 10px;
+            background-color: #EEEEEE;
+            border-bottom: 2px solid #AAAAAA;
+        }
+        .header a {
+            margin: 0 5px;
+            font-size: 11px;
+        }
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: left;
+            color: #000;
+        }
+        .logo span {
+            color: #E53238;
+        }
+        .logo span:nth-child(2) {
+            color: #FFB200;
+        }
+        .logo span:nth-child(3) {
+            color: #0DBF26;
+        }
+        .logo span:nth-child(4) {
+            color: #0064D2;
+        }
+        .nav {
+            padding: 5px 10px;
+            background-color: #DDDDDD;
+            font-size: 12px;
+            border-top: 2px solid #AAAAAA;
+        }
+        .nav a {
+            margin-right: 10px;
+            color: black;
+        }
+        .content {
+            display: flex;
+        }
+        .left-column, .center-column, .right-column {
+            padding: 10px;
+        }
+        .left-column {
+            width: 20%;
+            background-color: #FFFFCC;
+            border-right: 1px solid #CCCCCC;
+        }
+        .left-column h3 {
+            background-color: #FFCC00;
+            font-size: 14px;
+            margin: 0;
+            padding: 5px;
+        }
+        .left-column a {
+            display: block;
+            margin: 5px 0;
+        }
+        .center-column {
+            flex: 1;
+            background-color: #FFFFFF;
+        }
+        .center-column h3 {
+            font-size: 14px;
+            background-color: #99FF99;
+            padding: 5px;
+            margin: 0;
+        }
+        .center-column a {
+            display: block;
+            margin: 5px 0;
+        }
+        .right-column {
+            width: 20%;
+            background-color: #F0F8FF;
+            border-left: 1px solid #CCCCCC;
+        }
+        .right-column h3 {
+            background-color: #00CCFF;
+            color: white;
+            font-size: 14px;
+            margin: 0;
+            padding: 5px;
+        }
+        .stats {
+            font-size: 11px;
+            background-color: #FFFFE0;
+            border: 1px solid #CCCCCC;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #DDDDDD;
+            font-size: 11px;
+            border-top: 2px solid #AAAAAA;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 5px auto;
+            border: 1px solid #CCCCCC;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <a href="#">home</a> | <a href="#">my eBay</a> | <a href="#">site map</a>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo">
+        <span>e</span><span>b</span><span>a</span><span>y</span>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <a href="#">Browse</a>
+        <a href="#">Sell</a>
+        <a href="#">Services</a>
+        <a href="#">Search</a>
+        <a href="#">Help</a>
+        <a href="#">Community</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Left Sidebar -->
+        <div class="left-column">
+            <h3>categories</h3>
+            <a href="#">Automotive</a>
+            <a href="#">Antiques</a>
+            <a href="#">Books, Movies, Music</a>
+            <a href="#">Coins & Stamps</a>
+            <a href="#">Collectibles</a>
+            <a href="#">Computers</a>
+            <a href="#">Dolls, Figures</a>
+            <a href="#">Jewelry, Gemstones</a>
+            <a href="#">Photo & Electronics</a>
+            <a href="#">Sports Memorabilia</a>
+            <img src="pc.jpg" alt="Old PC">
+            <div class="stats">
+                <b>stats</b><br>
+                2,967,077 items for sale<br>
+                Over <b>1.5 billion</b> page views!
+            </div>
+        </div>
+
+        <!-- Center Content -->
+        <div class="center-column">
+            <h3>featured</h3>
+            <a href="#">Canon BJC 2000 4000 Series Color $5.95</a>
+            <img src="printer.jpg" alt="Printer">
+            <a href="#">Mel Torme's 1963 Rolls Royce</a>
+            <img src="car.jpg" alt="Old Car">
+            <a href="#">WebTV/Dish Network Combo</a>
+            <a href="#">Michael Jordan Basketball Restaurant Pic</a>
+            <a href="#">Cobra 360 Radar with Digital Readout</a>
+            <a href="#">Canon 4000 Series Color Cartridge</a>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-column">
+            <h3>cool features</h3>
+            <p>Scare up everything you can conjure up for a <a href="#">Halloween-O-Rama!</a></p>
+            <img src="pumpkin.jpg" alt="Pumpkin">
+            <h3>fun stuff</h3>
+            <p><a href="#">Cool happenings...</a></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="#">Announcements</a> | <a href="#">Register</a> | <a href="#">eBay Store</a> | <a href="#">Feedback Forum</a> | <a href="#">Jobs</a>
+    </div>
+</body>
+</html>
